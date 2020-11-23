@@ -3,6 +3,7 @@ class Aresta:
         self.v1 = vertice_1
         self.v2 = vertice_2
         self.peso = peso
+        self.classificacao = None
 
     def __repr__(self):
         return str(self.v2)
