@@ -1,7 +1,7 @@
 from objetos import Grafo
 
 num_vertices = 7
-direcionado = False
+direcionado = True
 
 # Criando Grafo
 grafo = Grafo(num_vertices, direcionado)
