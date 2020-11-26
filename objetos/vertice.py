@@ -7,6 +7,7 @@ class Vertice:
         self.tempo_descoberta = None
         self.tempo_finalizacao = None
         self.antecessor = None
+        self.distancia = None
 
     def __repr__(self):
         return str(self.nome)

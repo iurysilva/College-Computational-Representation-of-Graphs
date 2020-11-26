@@ -2,6 +2,7 @@ from objetos import Grafo, Algoritmos
 
 num_vertices = 8
 direcionado = True
+vertice_inicial = 6
 
 # Criando Grafo
 grafo = Grafo(num_vertices, direcionado)
@@ -21,8 +22,10 @@ grafo.adiciona_aresta(6, 2)
 grafo.adiciona_aresta(6, 4)
 grafo.adiciona_aresta(7, 3)
 grafo.adiciona_aresta(7, 5)
-# executando DFS
 algoritmos = Algoritmos(grafo)
-algoritmos.dfs()
-# mostrando classificação das arestas
-grafo.get_classificacao_arestas()
+
+# executar DFS
+# algoritmos.dfs()
+# grafo.get_classificacao_arestas()
+# executar BFS
+algoritmos.bfs(vertice_inicial)
