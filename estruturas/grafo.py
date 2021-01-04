@@ -1,5 +1,5 @@
-from objetos.vertice import Vertice
-from objetos.aresta import Aresta
+from estruturas.vertice import Vertice
+from estruturas.aresta import Aresta
 import numpy as np
 
 
@@ -47,5 +47,3 @@ class Grafo:
         for vertice in self.vertices:
             for aresta in vertice.lista_adjacencia:
                 print("classificacao da aresta %d para %d: %s" % (aresta.v1, aresta.v2, aresta.classificacao))
-
-

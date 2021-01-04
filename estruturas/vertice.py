@@ -8,6 +8,8 @@ class Vertice:
         self.tempo_finalizacao = None
         self.antecessor = None
         self.distancia = None
+        self.marcado = False
+        self.id = None
 
     def __repr__(self):
         return str(self.nome)
