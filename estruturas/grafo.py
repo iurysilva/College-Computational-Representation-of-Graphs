@@ -4,16 +4,21 @@ import numpy as np
 
 
 class Grafo:
-    def __init__(self, num_vertices, direcionado):
+    def __init__(self, num_vertices, direcionado, vertice_inicial):
         self.direcionado = direcionado
         self.num_vertices = num_vertices
         self.vertices = []
         self.matriz = np.zeros((num_vertices, num_vertices), dtype="int")
         self.tempo = 0
+        self.vertice_inicial = None
 
     def cria_vertices(self):
+        self.vertices = []
         for vertice in range(self.num_vertices):
             self.vertices.append(Vertice(vertice))
+
+    def cria_matriz(self):
+        self.matriz = np.zeros((self.num_vertices, self.num_vertices), dtype="int")
 
     def adiciona_aresta(self, v1, v2):
         if v1 >= self.num_vertices or v2 >= self.num_vertices:
