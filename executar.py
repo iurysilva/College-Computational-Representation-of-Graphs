@@ -2,9 +2,7 @@ from estruturas import Grafo
 from algoritmos import DFS, BFS, Componentes_Conectados, Ordenacao_Topologica
 from grafos import DAG1, DAG2
 
-num_vertices = 6
-direcionado = False
-vertice_inicial = 6
+
 grafo_escolhido = DAG1
 
 # Criando Grafo
