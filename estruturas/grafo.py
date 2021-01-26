@@ -4,11 +4,11 @@ import numpy as np
 
 
 class Grafo:
-    def __init__(self, num_vertices, direcionado, vertice_inicial):
-        self.direcionado = direcionado
-        self.num_vertices = num_vertices
+    def __init__(self):
+        self.direcionado = None
+        self.num_vertices = None
         self.vertices = []
-        self.matriz = np.zeros((num_vertices, num_vertices), dtype="int")
+        self.matriz = None
         self.tempo = 0
         self.vertice_inicial = None
 

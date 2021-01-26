@@ -6,7 +6,7 @@ from grafos import DAG1, DAG2
 grafo_escolhido = DAG1
 
 # Criando Grafo
-grafo = Grafo(num_vertices, direcionado, vertice_inicial)
+grafo = Grafo()
 grafo_escolhido(grafo)
 
 '''executar DFS:'''
