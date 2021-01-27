@@ -31,4 +31,5 @@ class Ordenacao_Topologica:
         for vertice in self.grafo.vertices:
             if vertice.cor == "Branco":
                 self.visita_vertice(vertice)
+        self.grafo.get_classificacao_arestas()
         print('\nOrdem Topologica: ', self.vetor_ordenado)
