@@ -1,13 +1,17 @@
 from estruturas import Grafo
-from algoritmos import DFS, BFS, Componentes_Conectados, Ordenacao_Topologica
-from grafos import DAG1, DAG2
+from algoritmos import DFS, BFS, Componentes_Conectados, Ordenacao_Topologica, Kruskal
+from grafos import *
 
 
-grafo_escolhido = DAG1
+grafo_escolhido = grafo_nao_direcionado_ciclico_1
 
 # Criando Grafo
 grafo = Grafo()
 grafo_escolhido(grafo)
+
+'''executar Kruskal'''
+kruskal = Kruskal(grafo)
+kruskal.executar()
 
 '''executar DFS:'''
 # dfs = DFS(grafo)
@@ -24,5 +28,5 @@ grafo_escolhido(grafo)
 # componentes.ver_componentes()
 
 '''executar ordenação topológica'''
-ordenacao_topologica = Ordenacao_Topologica(grafo)
-ordenacao_topologica.executar()
+# ordenacao_topologica = Ordenacao_Topologica(grafo)
+# ordenacao_topologica.executar()

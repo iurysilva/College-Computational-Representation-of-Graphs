@@ -6,4 +6,4 @@ class Aresta:
         self.classificacao = None
 
     def __repr__(self):
-        return str(self.v2)
+        return str(self.peso)
